@@ -2,7 +2,7 @@
     "name": "clarknguyen85/generator",
     "description": "Generate laravel codes",
     "type": "composer-plugin",
-    "license": "Clark Nguyen",
+    "license": "MIT",
     "authors": [
         {
             "name": "Clark Nguyen",
@@ -10,5 +10,11 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=7.0"
+    },
+    "prefer-stable": true,
+    "require-dev": {
+        "illuminate/framework": "5.5.x"
+    }
 }
