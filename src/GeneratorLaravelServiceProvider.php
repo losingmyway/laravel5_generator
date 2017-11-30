@@ -19,14 +19,29 @@ class GeneratorLaravelServiceProvider extends ServiceProvider
         else {
             $this->loadViewsFrom(__DIR__ . '/views', 'generator');
         }
+        //php artisan vendor:publish (public all)
 
         //$this->loadMigrationsFrom(__DIR__ . '/database/migrations');
         $this->publishes([
             __DIR__ . '/views' => base_path('resources/views/clarknguyen85/generator'),
-            __DIR__ . '/database/migrations' => database_path('migrations'),
+        ], 'views');
+        //views as tag name so we can put other name
+        //php artisan vendor:publish --tag=views --force
+
+        $this->publishes([
+            __DIR__ . '/database/migrations' => database_path('migrations')
+        ], 'migrations');
+        //php artisan vendor:publish --tag=migrations --force
+
+        $this->publishes([
+            __DIR__.'/config/clarknguyen85_generator.php' => config_path('clarknguyen85_generator.php')
+        ], 'config');
+        //php artisan vendor:publish --tag=config
+
+        $this->publishes([
             __DIR__ . '/assets' => public_path('generator'),
-            //__DIR__.'/../config/package.php' => config_path('package.php')
-        ]);
+        ], 'public');
+        //php artisan vendor:publish --tag=public --force
     }
 
     /**
