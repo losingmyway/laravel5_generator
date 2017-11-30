@@ -1,0 +1,14 @@
+{
+    "name": "clarknguyen85/generator",
+    "description": "Generate laravel codes",
+    "type": "composer-plugin",
+    "license": "Clark Nguyen",
+    "authors": [
+        {
+            "name": "Clark Nguyen",
+            "email": "truong12a62009@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
