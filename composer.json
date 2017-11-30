@@ -16,6 +16,11 @@
     "require-dev": {
         "illuminate/framework": "5.5.x"
     },
+    "autoload": {
+        "psr-4": {
+            "ClarkNguyen85\\Generator\\": "src"
+        }
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
