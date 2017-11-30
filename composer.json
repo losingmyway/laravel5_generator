@@ -16,5 +16,15 @@
     "prefer-stable": true,
     "require-dev": {
         "illuminate/framework": "5.5.x"
-    }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "ClarkNguyen85\\Generator\\GeneratorLaravelServiceProvider"
+            ]
+        }
+    },
 }
