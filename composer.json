@@ -1,7 +1,6 @@
 {
     "name": "clarknguyen85/generator",
     "description": "Generate laravel codes",
-    "type": "composer-plugin",
     "license": "MIT",
     "authors": [
         {
